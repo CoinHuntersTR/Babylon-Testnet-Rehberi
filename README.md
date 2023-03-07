@@ -51,13 +51,13 @@ make build
 - **Cosmovisor**
 
 ```
-mkdir -p $HOME/.nibid/cosmovisor/genesis/bin
-mv build/nibid $HOME/.nibid/cosmovisor/genesis/bin/
+mkdir -p $HOME/.babylond/cosmovisor/genesis/bin
+mv build/nibid $HOME/.babylond/cosmovisor/genesis/bin/
 rm -rf build
 ```
 ```
-sudo ln -s $HOME/.nibid/cosmovisor/genesis $HOME/.nibid/cosmovisor/current
-sudo ln -s $HOME/.nibid/cosmovisor/current/bin/nibid /usr/local/bin/nibid
+sudo ln -s $HOME/.babylond/cosmovisor/genesis $HOME/.babylond/cosmovisor/current
+sudo ln -s $HOME/.babylond/cosmovisor/current/bin/babylond /usr/local/bin/babylond
 ```
 
 - **nibid'ün başarılı yüklendiğinin kontrolü**

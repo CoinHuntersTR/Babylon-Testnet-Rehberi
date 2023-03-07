@@ -60,12 +60,12 @@ sudo ln -s $HOME/.babylond/cosmovisor/genesis $HOME/.babylond/cosmovisor/current
 sudo ln -s $HOME/.babylond/cosmovisor/current/bin/babylond /usr/local/bin/babylond
 ```
 
-- **nibid'ün başarılı yüklendiğinin kontrolü**
+- **babylond'ün başarılı yüklendiğinin kontrolü**
 
 ```
-nibid version
+babylond version
 ```
-![nibi-version](https://user-images.githubusercontent.com/111747226/221792927-67a7f03d-29ed-44cf-bfb1-df04108cfe8f.png)
+
 
 - **Cosmovisor Kurulumu**
 
@@ -143,3 +143,50 @@ sudo -S systemctl enable babylond
 sudo -S systemctl start babylond
 sudo journalctl -fu babylond -o cat
 ```
+
+- **Cüzdan Oluşturma**
+- cüzdanadi yerine istediğiniz bir adı yazabilirsiniz.
+```
+babylond keys add cüzdanadi
+```
+
+- **Önceden kullandığınız bir cüzdanı eklemek için**
+- cüzdanadi yerine istediğiniz bir adı yazabilirsiniz.
+```
+nibid keys add cüzdanadi --recover
+```
+
+
+- **Babylon Discord Kanalından Faucet**
+
+- **Discord** - **https://discord.gg/babylonchain**
+
+$request <cüzdan-adresiniz>
+
+
+**Validatör Kurulumu**
+> "moniker-adiniz" " dahil silip moniker adınızı yazın, cuzdanadi kısmını silip cüzdanadınızı yazmayı unutmayın.
+
+```
+babylond tx checkpointing create-validator \
+  --amount="$AMOUNT" \
+  --pubkey=$(babylond tendermint show-validator) \
+  --moniker=Monikeradi \
+  --website="https://coinhunterstr.com/" \
+  --details="https://linktr.ee/coinhunters" \
+  --chain-id=$CHAIN_ID \
+  --gas="auto" \
+  --gas-adjustment=1.2 \
+  --gas-prices="0.0025ubbn" \
+  --keyring-backend=test \
+  --from=cüzdanadi \
+  --commission-rate="0.10" \
+  --commission-max-rate="0.20" \
+  --commission-max-change-rate="0.01" \
+  --min-self-delegation="1"
+-y
+```
+
+## Nibiru Testnet Explorer [Buradan](https://babylon.explorers.guru/validators ulaşabilirsiniz.
+
+

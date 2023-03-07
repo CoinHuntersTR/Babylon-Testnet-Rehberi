@@ -159,10 +159,10 @@ nibid keys add cüzdanadi --recover
 
 - **Babylon Discord Kanalından Faucet**
 
-- **Discord** - **https://discord.gg/babylonchain**
-
+- **Discord** - **(https://discord.gg/babylonchain)**
+```
 $request <cüzdan-adresiniz>
-
+```
 
 **Validatör Kurulumu**
 > "moniker-adiniz" " dahil silip moniker adınızı yazın, cuzdanadi kısmını silip cüzdanadınızı yazmayı unutmayın.
@@ -187,6 +187,6 @@ babylond tx checkpointing create-validator \
 -y
 ```
 
-## Nibiru Testnet Explorer [Buradan](https://babylon.explorers.guru/validators ulaşabilirsiniz.
+## Nibiru Testnet Explorer [Buradan](https://babylon.explorers.guru/validators) ulaşabilirsiniz.
 
 

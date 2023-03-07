@@ -158,7 +158,7 @@ babylond keys add cüzdanadi --recover
 
 - **Babylon Discord Kanalından Faucet**
 
-- **Discord** - **(https://discord.gg/babylonchain)**
+- **Discord** [Buradan](https://discord.gg/babylonchain) ulaşabilirsiniz.
 ```
 $request <cüzdan-adresiniz>
 ```

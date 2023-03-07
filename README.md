@@ -43,6 +43,7 @@ go version
 ```
 cd $HOME
 rm -rf babylon
+git clone https://github.com/babylonchain/babylon
 cd babylon
 git checkout v0.19.2
 make build

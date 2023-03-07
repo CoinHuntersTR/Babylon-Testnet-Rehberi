@@ -52,7 +52,7 @@ make build
 
 ```
 mkdir -p $HOME/.babylond/cosmovisor/genesis/bin
-mv build/nibid $HOME/.babylond/cosmovisor/genesis/bin/
+mv build/babylond $HOME/.babylond/cosmovisor/genesis/bin/
 rm -rf build
 ```
 ```

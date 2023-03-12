@@ -154,7 +154,11 @@ babylond keys add cüzdanadi
 ```
 babylond keys add cüzdanadi --recover
 ```
-
+BLS KEY açma
+- "istediğinisim" ""dahil istediğin isimi verebilirsin.
+```
+babylond create-bls-key "istediğinisim"
+```
 
 - **Babylon Discord Kanalından Faucet**
 
